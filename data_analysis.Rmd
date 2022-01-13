@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#col_names <- names(readr::read_delim(file.path("data", "data.csv"), n_max = 0, delim = ',')) 
+#data <- readr::read_delim(file.path("data", "data.csv"), delim = ',', skip = 82, col_names = col_names)
+```
+
+
+```{r}
+readr::read_csv("data\\data.csv")
+
+
+```
+
