@@ -1,21 +1,194 @@
 ---
-title: "Untitled"
-output: html_document
+title: "Readme"
+author: "Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz"
+date: "17 01 2022"
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(jmv)
+library(hcictools)
+library(ggplot2)
+library(remotes)
+readRDS("data/clean_data.rds") -> Cleandata
 ```
 
-```{r}
-#col_names <- names(readr::read_delim(file.path("data", "data.csv"), n_max = 0, delim = ',')) 
-#data <- readr::read_delim(file.path("data", "data.csv"), delim = ',', skip = 82, col_names = col_names)
+XAI in der Produktion  
+================  
+
+### Inhaltsverzeichnis
+
+1. [Teammitglieder](#1-teammitglieder)
+2. [Forschungsfrage](#2-forschungsfrage)
+3. [Faktorenraum](#3-faktorenraum)
+4. [Szenariotext](#4-szenariotext)
+5. [Unterschiedshypothesen](#5-unterschiedshypothesen)
+6. [Zusammenhangshypothesen](#6-zusammenhangshypothesen)
+7. [Hypothesenauswertung](#7-hypothesenauswertung)
+8. [Qualitätskontrolle](#8-qualitätskontrolle)
+
+
+### 1. Teammitglieder 
+
+Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
+
+
+### 2. Forschungsfrage 
+
+ 
+
+
+---
+
+#png einfügen 
+---
+
+<br>
+
+### 4. Szenariotext
+
+ 
+
+
+---
+
+<br>
+
+### 5. Unterschiedshypothesen:
+
+
+#### Hypothese 1
+
+"Es gibt einen Unterschied zwischen Männern und Frauen in Bezug auf die Akzeptanz im Umgang mit Technik."
+
+```{r include=FALSE}
+
+t.test(filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik,
+       filter(Cleandata, geschlecht == "Weiblich")$AKz_UmgangTechnik)
+
 ```
 
 
-```{r}
-readr::read_csv("data\\data.csv")
+#### Hypothese 2
 
 
-```
+
+
+
+
+#### Hypothese 3
+
+
+
+
+
+#### komplexe Unterschiedshypothese
+
+
+---
+
+<br>
+
+### 6. Zusammenhangshypothesen
+
+
+#### Hypothese 1
+
+
+
+
+
+#### Hypothese 2
+
+
+
+
+#### Hypothese 3
+
+
+
+
+
+#### Hypothese 4
+
+
+---
+
+<br>
+
+### 7. Hypothesenauswertung
+
+
+#### Unterschiedshypothesen
+
+
+#### Hypothese 1:
+
+
+ 
+<br>
+
+
+#### Hypothese 2:
+
+ 
+
+
+<br>
+<br>
+
+
+#### Hypothese 3:
+
+
+
+
+<br>
+<br>
+
+
+#### Zusammenhangshypothesen
+
+
+
+#### Hypothese 1:
+
+
+
+
+<br>
+<br>
+
+
+#### Hypothese 2:
+
+
+
+
+<br>
+<br>
+
+
+#### Hypothese 3:
+
+
+
+
+<br>
+<br>
+
+
+#### Hypothese 4:
+
+
+
+<br>
+
+
+---
+
+
+### 8. Qualitätskontrolle
 

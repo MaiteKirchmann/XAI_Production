@@ -124,11 +124,11 @@ raw.short$kI_Erwartung_4 <- ordered(raw.short$kI_Erwartung_4, levels = scale.zus
 raw.short$kI_Erwartung_5 <- ordered(raw.short$kI_Erwartung_5, levels = scale.zustimmung)
 raw.short$kI_Erwartung_6 <- ordered(raw.short$kI_Erwartung_6, levels = scale.zustimmung)
 
-raw.short$kI_Erfahrung_1 <- ordered(raw.short$kI_Erfahrung_1, levels = scale.zustimmungKa)
-raw.short$kI_Erfahrung_2 <- ordered(raw.short$kI_Erfahrung_2, levels = scale.zustimmungKa)
-raw.short$kI_Erfahrung_3 <- ordered(raw.short$kI_Erfahrung_3, levels = scale.zustimmungKa)
-raw.short$kI_Erfahrung_4 <- ordered(raw.short$kI_Erfahrung_4, levels = scale.zustimmungKa)
-raw.short$kI_Erfahrung_5 <- ordered(raw.short$kI_Erfahrung_5, levels = scale.zustimmungKa)
+raw.short$kI_Erfahrung_1 <- ordered(raw.short$kI_Erfahrung_1, levels = scale.zustimmung)
+raw.short$kI_Erfahrung_2 <- ordered(raw.short$kI_Erfahrung_2, levels = scale.zustimmung)
+raw.short$kI_Erfahrung_3 <- ordered(raw.short$kI_Erfahrung_3, levels = scale.zustimmung)
+raw.short$kI_Erfahrung_4 <- ordered(raw.short$kI_Erfahrung_4, levels = scale.zustimmung)
+raw.short$kI_Erfahrung_5 <- ordered(raw.short$kI_Erfahrung_5, levels = scale.zustimmung)
 
 # Skalen berechnen: ----
 
