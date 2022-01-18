@@ -118,9 +118,24 @@ png?
 
 #### Hypothese 3:
 
-“”
+“Männer und Frauen unterscheiden sich in Bezug auf die Akzeptanz im Umgang mit Technik.”
 
-Ergebnis: 
+Ergebnis: Es gibt keinen signifikanten Unterschied zwischen den beiden getesteten Gruppen 
+in Bezug auf die Akzeptanz im Umgang mit Technik. 
+(*t*(54.662) = 1.9854 ,*p* > 0.05)
+
+
+Welch Two Sample t-test
+
+data:  filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik and filter(Cleandata, geschlecht == "Weiblich")$Akz_UmgangTechnik
+t = 1.985, df = 54.662, p-value = 0.05217
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.003254863  0.672485632
+sample estimates:
+mean of x mean of y 
+ 4.700000  4.365385
+
 
 <br> <br>
 

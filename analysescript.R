@@ -15,12 +15,14 @@ raw <- load_qualtrics_csv(file.text)
 # Testdaten und unvollständige Daten entfernen: ----
 # Unvollständige Fragebögen und Speeder entfernen (>289 sec) 
 
-raw %>%
-  filter(Progress == 100) %>%
-  filter(ResponseId != "R_3R4OScS5VgLUdgP") %>%
-  filter(ResponseId != "R_31cpXUjQl3AD2Z9") %>%
-  filter(ResponseId != "R_1mxEKQ5VWXf3lbw") %>%
-  filter(ResponseId != "R_1NDKKME6r1Hfkai") -> raw
+raw %>% 
+  filter(Progress == 100) -> raw
+
+#filter(ResponseId != "R_3R4OScS5VgLUdgP") %>%
+#filter(ResponseId != "R_31cpXUjQl3AD2Z9") %>%
+#filter(ResponseId != "R_1mxEKQ5VWXf3lbw") %>%
+#filter(ResponseId != "R_1NDKKME6r1Hfkai")
+
 
 # Unnötige Spalten entfernen: ----
 

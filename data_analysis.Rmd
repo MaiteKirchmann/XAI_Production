@@ -65,10 +65,11 @@ Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
 
 ```{r include=FALSE}
 
-t.test(filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik,
-       filter(Cleandata, geschlecht == "Weiblich")$AKz_UmgangTechnik)
+t.test(filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik, filter(Cleandata, geschlecht == "Weiblich")$Akz_UmgangTechnik)
 
 ```
+Ergebnis:
+Es gibt keinen signifikanten Unterschied zwischen den beiden getesteten Gruppen in Bezug auf die Akzeptanz im Umgang mit Technik. ($t(1.985)= 54.66$  ,$p>0.05$).
 
 
 #### Hypothese 2
