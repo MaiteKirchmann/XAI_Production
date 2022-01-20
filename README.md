@@ -34,7 +34,25 @@ Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
 ### 4. Szenariotext
 
-XX
+Musterbeispiel: Nüsse sortieren mithilfe von KI​
+
+​
+
+Wie bereits erwähnt, handelt diese Studie von XAI (explainable artificial intelligence = erklärbare künstliche Intelligenz) in der Produktion.​
+
+​
+Im Folgenden wollen wir Ihnen kurz erklären, was man darunter versteht. ​
+
+Eine künstliche Intelligenz (KI) kann zum Beispiel in einer Maschine implementiert sein. Wird diese in der Produktion eingesetzt, so hat sie meist eine zugeordnete Aufgabe. In der Lebensmittelproduktion wird eine künstliche Intelligenz beispielsweise zum Vorsortieren von Nüssen eingesetzt. Dort hat sie die Aufgabe die Nüsse nach einer Norm zu sortieren. Diese Maschine wird im folgenden Nusssortierer genannt.    ​
+
+Eine KI wird zu einer XAI wenn die Produktionsmitarbeitenden verstehen, anhand welcher Merkmale die KI die Nüsse aussortiert. ​
+
+Ein Merkmal kann bei diesem Beispiel die Größe, die Oberflächenbeschaffenheit oder die Form der Nuss sein. Können die Mitarbeitenden diese Auswahlkriterien nachvollziehen, kann man von einer XAI sprechen. ​
+
+​
+Der Grad der Erklärbarkeit ist jedoch von Mensch zu Mensch verschieden. Deshalb unterscheidet sich auch die Akzeptanz der KI in der Produktion individuell.​
+​
+Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen, wie die Nutzerakzeptanz einer KI beeinflusst wird.
 
 ------------------------------------------------------------------------
 
@@ -44,19 +62,19 @@ XX
 
 #### Hypothese 1
 
--   xx ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
+-   ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
 -   H0: 
 -   H1: 
 
 #### Hypothese 2
 
--   xx ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
+-   ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
 -   H0: 
 -   H1: 
 
 #### Hypothese 3
 
--   xx Frauen unterscheiden sich von Männern in Bezug auf die Akzeptanz von KI.
+-   Frauen unterscheiden sich von Männern in Bezug auf die Akzeptanz von KI.
 
 
 
@@ -69,25 +87,25 @@ XX
 
 #### Hypothese 1
 
--   xx Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz.
+-   Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz.
 
 #### Hypothese 2
 
--   xx Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
+-   Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
 
 #### Hypothese 3
 
--   xx Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
+-   Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
 
 #### komplexe Zusammenhangshypothese
 
 #### Hypothese 1
 
--   xx Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
+-   Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
 
 #### Hypothese 2
 
--   xx Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI. 
+-   Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI. 
 
 
 ------------------------------------------------------------------------
