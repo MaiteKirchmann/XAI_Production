@@ -19,7 +19,7 @@ Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
 
 ### 2. Forschungsfrage
 
-Inwiefern ...
+Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
 ### 3. Faktorenraum
 
@@ -44,21 +44,21 @@ XX
 
 #### Hypothese 1
 
--   xx
+-   xx ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
 -   H0: 
 -   H1: 
 
 #### Hypothese 2
 
--   xx
+-   xx ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
 -   H0: 
 -   H1: 
 
 #### Hypothese 3
 
+-   xx Frauen unterscheiden sich von Männern in Bezug auf die Akzeptanz von KI.
 
 
-#### komplexe Unterschiedshypothese
 
 
 ------------------------------------------------------------------------
@@ -69,21 +69,25 @@ XX
 
 #### Hypothese 1
 
-
+-   xx Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz.
 
 #### Hypothese 2
 
+-   xx Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
 
 #### Hypothese 3
 
-
-
-#### Hypothese 4
-
-
+-   xx Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
 
 #### komplexe Zusammenhangshypothese
 
+#### Hypothese 1
+
+-   xx Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
+
+#### Hypothese 2
+
+-   xx Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI. 
 
 
 ------------------------------------------------------------------------
