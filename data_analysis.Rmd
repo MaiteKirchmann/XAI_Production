@@ -37,8 +37,10 @@ Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
 
 ### 2. Forschungsfrage 
 
- 
+Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
+
+### 3. Faktorenraum 
 
 ---
 
@@ -49,43 +51,57 @@ Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
 
 ### 4. Szenariotext
 
- 
+Musterbeispiel: Nüsse sortieren mithilfe von KI​
+
+​
+
+Wie bereits erwähnt, handelt diese Studie von XAI (explainable artificial intelligence = erklärbare künstliche Intelligenz) in der Produktion.​
+
+​
+Im Folgenden wollen wir Ihnen kurz erklären, was man darunter versteht. ​
+
+Eine künstliche Intelligenz (KI) kann zum Beispiel in einer Maschine implementiert sein. Wird diese in der Produktion eingesetzt, so hat sie meist eine zugeordnete Aufgabe. In der Lebensmittelproduktion wird eine künstliche Intelligenz beispielsweise zum Vorsortieren von Nüssen eingesetzt. Dort hat sie die Aufgabe die Nüsse nach einer Norm zu sortieren. Diese Maschine wird im folgenden Nusssortierer genannt.    ​
+
+Eine KI wird zu einer XAI wenn die Produktionsmitarbeitenden verstehen, anhand welcher Merkmale die KI die Nüsse aussortiert. ​
+
+Ein Merkmal kann bei diesem Beispiel die Größe, die Oberflächenbeschaffenheit oder die Form der Nuss sein. Können die Mitarbeitenden diese Auswahlkriterien nachvollziehen, kann man von einer XAI sprechen. ​
+
+​
+Der Grad der Erklärbarkeit ist jedoch von Mensch zu Mensch verschieden. Deshalb unterscheidet sich auch die Akzeptanz der KI in der Produktion individuell.​
+​
+Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen, wie die Nutzerakzeptanz einer KI beeinflusst wird.
 
 
 ---
 
 <br>
-
 ### 5. Unterschiedshypothesen:
 
 
 #### Hypothese 1
 
-"Es gibt einen Unterschied zwischen Männern und Frauen in Bezug auf die Akzeptanz im Umgang mit Technik."
+* ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
+* H0: 
+* H1: 
 
-```{r include=FALSE}
 
-t.test(filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik, filter(Cleandata, geschlecht == "Weiblich")$Akz_UmgangTechnik)
-
-```
-Ergebnis:
-Es gibt keinen signifikanten Unterschied zwischen den beiden getesteten Gruppen in Bezug auf die Akzeptanz im Umgang mit Technik. ($t(1.985)= 54.66$  ,$p>0.05$).
 
 
 #### Hypothese 2
 
-
+* ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
+* H0: 
+* H1: 
 
 
 
 
 #### Hypothese 3
-
-
-
-
-
-#### komplexe Unterschiedshypothese
+* Es gibt einen Unterschied zwischen Männern und Frauen in Bezug auf die Akzeptanz im Umgang mit Technik.
+* UV: 
+* AV: 
+* H0: 
+* H1: 
 
 
 ---
@@ -96,95 +112,167 @@ Es gibt keinen signifikanten Unterschied zwischen den beiden getesteten Gruppen 
 
 
 #### Hypothese 1
-
+* Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz von KI.
+* H1: 
+* H0: 
 
 
 
 
 #### Hypothese 2
+* Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten.
+* H1: 
+* H0: 
 
 
 
 
 #### Hypothese 3
+* Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten.
+* H1: 
+* H0: 
 
 
 
+#### komplexe Zusammenhangshypothese
+#### Hypothese 1
+* Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
+* H1: 
+* H0: 
 
 
-#### Hypothese 4
+#### Hypothese 2
+* Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI.
+* H1:
+* H0:
+
+---
+
+<br>
+### 7. Hypothesenauswertung
+#### Unterschiedshypothesen
+
+#### Hypothese 1
+
+"ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI."
+
+```{r include=FALSE}
+
+
+#mancova(filter(Cleandata, arbeitsumfeld == "Ja"), deps = c("Akz_UmgangTechnik", "Akz_Zufriedenheit", "Akz_Verhaltensabsich"))
+
+mancova(Cleandata, deps = c("Akz_UmgangTechnik", "Akz_Zufriedenheit", "Akz_Verhaltensabsich"), factors = c("arbeitsumfeld"))
+
+#t.test(filter(Cleandata, arbeitsumfeld == "Ja")$Akz_UmgangTechnik, filter(Cleandata, arbeitsumfeld == "Nein")$Akz_UmgangTechnik)
+
+
+```
+Ergebnis:
+Es gibt keinen signifikatnten 
+
+<br>
+<br>
+#### Hypothese 2
+
+"ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI."
+
+```{r include=FALSE}
+
+Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-Inf ,median(Cleandata$alter), Inf), labels=c("low", "high")))
+
+t.test(filter(Cleandata,alter_Binary == "low")$Akz_Verhaltensabsich, filter(Cleandata, alter_Binary == "high")$Akz_Verhaltensabsich)
+
+```
+
+<br>
+<br>
+#### Hypothese 3
+
+"Es gibt einen Unterschied zwischen Männern und Frauen in Bezug auf die Akzeptanz im Umgang mit Technik."
+
+```{r include=FALSE}
+
+t.test(filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik, filter(Cleandata, geschlecht == "Weiblich")$Akz_UmgangTechnik)
+
+
+```
+Ergebnis:
+Es gibt keinen signifikanten Unterschied zwischen Mönnern (m=4,7, SD= ) und Frauen (m=4,4, SD= ) in Bezug auf die Akzeptanz im Umgang mit Technik. ($t(1.71)= 55.61$  ,$_p_ = 0.092$).
+
 
 
 ---
 
 <br>
 
-### 7. Hypothesenauswertung
-
-
-#### Unterschiedshypothesen
-
-
-#### Hypothese 1:
-
-
- 
-<br>
-
-
-#### Hypothese 2:
-
- 
-
-
-<br>
-<br>
-
-
-#### Hypothese 3:
-
-
-
-
-<br>
-<br>
-
-
 #### Zusammenhangshypothesen
 
 
+#### Hypothese 1
 
-#### Hypothese 1:
+"Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz von KI."
 
 
+```{r include=FALSE}
+
+cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_Verhaltensabsich, method = "kendall")
 
 
+```
 <br>
 <br>
+#### Hypothese 2
+
+"Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
+
+```{r include=FALSE}
+
+cor.test(Cleandata$UmgangVeränderung, Cleandata$Akz_Verhaltensabsich, method = "kendall")
 
 
-#### Hypothese 2:
-
-
-
-
+```
 <br>
 <br>
+#### Hypothese 3
 
 
-#### Hypothese 3:
+"Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
+
+```{r include=FALSE}
+#Gibt es eine Möglichkeit die Angaben der Techniknutzung zu zählen?
+
+#cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_UmgangTechnik, method = "kendall")
 
 
-
-
+```
 <br>
 <br>
+#### komplexe Zusammenhangshypothese
+
+#### Hypothese 1
+
+"Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI."
+
+```{r include=FALSE}
+
+Modell <- lm(Akz_Verhaltensabsich ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
+summary(Modell)
+
+```
+<br>
+<br>
+#### Hypothese 2
+
+"Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI."
 
 
-#### Hypothese 4:
+```{r include=FALSE}
 
+a <- lm(Akz_Verhaltensabsich ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung + KI_Erwartung, data = Cleandata)
 
+summary(a)
 
+```
 <br>
 
 

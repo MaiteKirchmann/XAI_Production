@@ -163,3 +163,5 @@ data <- data %>%
 # RDS abspeichern: ----
 
 saveRDS(data, "data/clean_data.rds")
+
+
