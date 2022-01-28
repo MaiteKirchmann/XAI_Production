@@ -244,6 +244,7 @@ cor.test(Cleandata$UmgangVeränderung, Cleandata$Akz_Verhaltensabsich, method = 
 #cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_UmgangTechnik, method = "kendall")
 
 
+
 ```
 <br>
 <br>

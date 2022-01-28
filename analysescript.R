@@ -155,7 +155,9 @@ data <- bind_cols(raw.short, as_tibble(scores$scores))
 
 data <- data %>% 
   select(-starts_with("umgangVeränderung", ignore.case = F)) %>% 
-  select(-starts_with("akz", ignore.case = F)) %>%
+  select(-starts_with("akz_U", ignore.case = F)) %>%
+  select(-starts_with("akz_Z", ignore.case = F)) %>%
+  select(-starts_with("akz_V", ignore.case = F)) %>%
   select(-starts_with("kI", ignore.case = F)) %>%
   select(-starts_with("xai", ignore.case = F))
 
