@@ -137,7 +137,7 @@ raw.short$kI_Erfahrung_5 <- ordered(raw.short$kI_Erfahrung_5, levels = scale.zus
 schluesselliste <- list(
   UmgangVeränderung = c("-umgangVeränderung_1", "umgangVeränderung_2", "umgangVeränderung_3", "umgangVeränderung_4", "-umgangVeränderung_5", "umgangVeränderung_6", "-umgangVeränderung_7"),
   Akz_UmgangTechnik = c("akz_UmgangTechnik_1", "akz_UmgangTechnik_2","-akz_UmgangTechnik_3","-akz_UmgangTechnik_4","akz_UmgangTechnik_5","akz_UmgangTechnik_6","akz_UmgangTechnik_7","akz_UmgangTechnik_8","akz_UmgangTechnik_9","akz_UmgangTechnik_10"),
-  Akz_Zufriedenheit = c("akz_Zufriedenheit_1", "akz_Zufriedenheit_2","-akz_Zufriedenheit_3","-akz_Zufriedenheit_4","-akz_Zufriedenheit_5","akz_Zufriedenheit_6","akz_Zufriedenheit_7"),
+  Akz_Zufriedenheit = c("akz_Zufriedenheit_1", "akz_Zufriedenheit_2","-akz_Zufriedenheit_3","-akz_Zufriedenheit_4","-akz_Zufriedenheit_5","akz_Zufriedenheit_6","-akz_Zufriedenheit_7"),
   Akz_Verhaltensabsich = c("akz_Verhaltensabsich_1", "akz_Verhaltensabsich_2","akz_Verhaltensabsich_3"),
   KI_Verständnis = c("kI_Verständnis_1", "kI_Verständnis_2", "kI_Verständnis_3", "-kI_Verständnis_4", "kI_Verständnis_5", "kI_Verständnis_6", "kI_Verständnis_7"),
   XAI_Transparenz = c("xai_Transparenz_1", "xai_Transparenz_2", "xai_Transparenz_3", "-xai_Transparenz_4", "-xai_Transparenz_5", "xai_Transparenz_6"),

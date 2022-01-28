@@ -282,3 +282,8 @@ summary(a)
 
 ### 8. Qualitätskontrolle
 
+      UmgangVeränderung Akz_UmgangTechnik Akz_Zufriedenheit Akz_Verhaltensabsich KI_Verständnis
+alpha         0.6528693         0.8218434         0.5220756             0.757387      0.8016342
+      XAI_Transparenz KI_Erwartung KI_Erfahrung
+alpha       0.7583905    0.7484369     0.754876
+
