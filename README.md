@@ -63,21 +63,29 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 #### Hypothese 1
 
 -   ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
--   H0: 
--   H1: 
+-   UV:
+-   AV:
+H0: ProduktionsmitarbeiterInnen unterscheiden sich nicht von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
+-   H1: ProduktionsmitarbeiterInnen unterscheiden sich nicht von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
 
 
 
 #### Hypothese 2
 
 -   ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
--   H0: 
--   H1: 
+-   UV:
+-   AV:
+-   H0: ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden nicht sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
+-   H1: ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI
 
 
 #### Hypothese 3
 
 -   Frauen unterscheiden sich von Männern in Bezug auf die Akzeptanz von KI.
+-   UV:
+-   AV:
+-   H0: Frauen unterscheiden sich nicht von Männer in Bezug auf die Akzeptanz von KI.
+-   H1: Frauen unterscheiden sich von Männern in Bezug auf die Akzeptanz von KI.
 
 
 
@@ -91,30 +99,37 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 #### Hypothese 1
 
 -   Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz.
-
+-   H1: Transparenzempfindung und Akzeptanz von KI korrelieren positiv.
+-   H0: Transparenzempfindung und Akzeptanz von KI korrelieren nicht.
 
 
 #### Hypothese 2
 
 -   Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
+-   H1: Offenheit gegenüber Veränderungen und Bereitschaft mit KI zusammenarbeiten korrelieren positiv.
+-   H0: Offenheit gegenüber Veränderungen und Bereitschaft mit KI zusammenarbeiten korrelieren nicht.
 
 
 
 #### Hypothese 3
 
--   Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
+-   Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten.
+-   H1: x und y korrelieren positiv.
+-   H0: x und y korrelieren nicht
 
 #### komplexe Zusammenhangshypothese
 
 #### Hypothese 1
 
 -   Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
+-   H1: Akzeptanz und y korrelieren positiv.
+-   H0: Akzeptanz und y korrelieren nicht
 
-![Offenheit](Visualisierung/LinReg_Offenheit_AKZ_KI.png)
 
 #### Hypothese 2
 
--   Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI. 
+-   Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI. -   H1: Akzeptanz korreliert positiv mit dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI .
+-   H0: Akzeptanz korreliert nicht mit dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI.
 
 
 
@@ -130,9 +145,11 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 
 “ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.”
 
-Mustersatz: Ergebnis: Es gibt einen signifikanten Unterschied zwischen den beiden
-getesteten Gruppen in Bezug auf die Offenheit gegenüber Veränderungen.
-(*t*(183, 78) =  − 3, 62 ,*p* &lt; 0.001).
+Mustersatz: Ergebnis: Es gibt keinen signifikanten Unterschied zwischen den beiden
+getesteten Gruppen in Bezug auf die Akzeptanz von KI.
+(*t*() = − ,*p* = 0.52).
+
+
 
 <br>
 
@@ -140,9 +157,9 @@ getesteten Gruppen in Bezug auf die Offenheit gegenüber Veränderungen.
 
 “ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.”
 
-Mustersatz: Ergebnis: Es gibt einen signifikanten Unterschied zwischen den beiden
-getesteten Gruppen in Bezug auf die allgemeine Arbeitszufriedenheit.
-(*t*(240, 05) =  − 8, 44 ,*p* &lt; 0.001).
+Mustersatz: Ergebnis: Es gibt keinen signifikanten Unterschied zwischen den beiden
+getesteten Gruppen in Bezug auf die Akzeptanz von KI.
+(*t*(45.9) = 0.76 ,*p* = 0.45).
 
 png?
 
@@ -162,20 +179,33 @@ Ergebnis: Es gibt keinen signifikanten Unterschied zwischen Männern (m=4,7, SD=
 
 #### Hypothese 1:
 
+"Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz von KI."
 
+Ergebnis: Es gibt einen positiven signifikanten Zusammenhang zwischen
+der Transparenzempfindung und der Akzeptanz von KI (*τ* = 0.41,
+*p* < 0.001). Das bedeutet, dass mit höherer einer höheren Funktionstransparenz die Akzeptanz von KI steigt.
 
 
 <br> <br>
 
 #### Hypothese 2:
 
+"Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
+Ergebnis: Es gibt einen positiven signifikanten Zusammenhang zwischen
+der Offenheit gegenüber Veränderungen und der Akzeptanz von KI (*τ* = 0.21,
+*p* < 0.001). Das bedeutet, dass mit einer offenen Einstellung gegenüber Veränderungen die Akzeptanz von KI steigt.
+
+
+![Offenheit](Visualisierung/LinReg_Offenheit_AKZ_KI.png)
 
 <br> <br>
 
 #### Hypothese 3:
 
+"Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
+Ergebnis: noch offen
 
 <br> <br>
 
@@ -183,12 +213,20 @@ Ergebnis: Es gibt keinen signifikanten Unterschied zwischen Männern (m=4,7, SD=
 
 #### Hypothese 1:
 
+"Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI."
+
+Ergebnis: Es gibt einen positiven signifikanten Zusammenhang zwischen
+der Akzeptanz von KI gegenüber der Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI (?? *p* < 0.001). 
 
 
 <br> <br>
 
 #### Hypothese 2:
 
+"Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI."
+
+Ergebnis: Es gibt einen positiven signifikanten Zusammenhang zwischen
+der Akzeptanz von KI gegenüber dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI.(?? *p* < 0.001).
 
 <br>
 
