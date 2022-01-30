@@ -12,6 +12,8 @@ library(jmv)
 library(hcictools)
 library(ggplot2)
 library(remotes)
+library(psych)
+library(car)
 readRDS("data/clean_data.rds") -> Cleandata
 ```
 
@@ -219,6 +221,14 @@ cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_Verhaltensabsich, method = "ke
 
 
 ```
+
+```{r include=FALSE}
+
+Cleandata %>% ggplot() + aes(x = XAI_Transparenz, y = Akz_Verhaltensabsich) + geom_point(alpha = 0.5) + geom_smooth(method = lm, color = "black") + cowplot::theme_half_open() + scale_y_continuous(limits= c(1,6), breaks = 1:6) + scale_x_continuous(limits= c(1,6), breaks = 1:6) +labs(x = "Transparenzempfindung", y = "Akzeptanz von KI", title = "Transparenzempfindung & Akzeptanz von KI korrelieren positiv.")
+
+```
+Ergebnis: 
+
 <br>
 <br>
 #### Hypothese 2
@@ -227,10 +237,26 @@ cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_Verhaltensabsich, method = "ke
 
 ```{r include=FALSE}
 
+cor.test(Cleandata$Akz_Verhaltensabsich, Cleandata$KI_Erfahrung, method = "kendall")
+
+
+```
+
+```{r include=FALSE}
+
 cor.test(Cleandata$UmgangVeränderung, Cleandata$Akz_Verhaltensabsich, method = "kendall")
 
 
 ```
+
+```{r include=FALSE}
+
+Cleandata %>% ggplot() + aes(x = UmgangVeränderung, y = Akz_Verhaltensabsich) + geom_point(alpha = 0.5) + geom_smooth(method = lm, color = "black") + cowplot::theme_half_open() + scale_y_continuous(limits= c(1,6), breaks = 1:6) + scale_x_continuous(limits= c(1,6), breaks = 1:6) +labs(x = "Offenheit gegenüber Veränderungen", y = "Akzeptanz von KI", title = "Offenheit gegenüber Veränderungen & 
+Akzeptanz von KI korrelieren positiv.")
+
+```
+
+Ergebnis: 
 <br>
 <br>
 #### Hypothese 3
@@ -246,6 +272,14 @@ cor.test(Cleandata$UmgangVeränderung, Cleandata$Akz_Verhaltensabsich, method = 
 
 
 ```
+
+```{r include=FALSE}
+
+
+
+```
+Ergebnis:
+
 <br>
 <br>
 #### komplexe Zusammenhangshypothese
@@ -260,6 +294,15 @@ Modell <- lm(Akz_Verhaltensabsich ~ UmgangVeränderung + KI_Verständnis + KI_Er
 summary(Modell)
 
 ```
+
+```{r include=FALSE}
+
+avPlots (Modell)
+
+```
+
+Ergebnis:
+
 <br>
 <br>
 #### Hypothese 2
@@ -274,6 +317,15 @@ a <- lm(Akz_Verhaltensabsich ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung 
 summary(a)
 
 ```
+
+```{r include=FALSE}
+
+avPlots (a) 
+
+```
+
+Ergebnis:
+
 <br>
 
 

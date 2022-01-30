@@ -2,6 +2,7 @@
 library(tidyverse)
 library(psych)
 source("qualtricshelpers.R")
+library(careless)
 
 # Rohdaten einlesen: ----
 
@@ -18,10 +19,7 @@ raw <- load_qualtrics_csv(file.text)
 raw %>% 
   filter(Progress == 100) -> raw
 
-#filter(ResponseId != "R_3R4OScS5VgLUdgP") %>%
-#filter(ResponseId != "R_31cpXUjQl3AD2Z9") %>%
-#filter(ResponseId != "R_1mxEKQ5VWXf3lbw") %>%
-#filter(ResponseId != "R_1NDKKME6r1Hfkai")
+
 
 
 # Unnötige Spalten entfernen: ----
@@ -137,7 +135,7 @@ raw.short$kI_Erfahrung_5 <- ordered(raw.short$kI_Erfahrung_5, levels = scale.zus
 schluesselliste <- list(
   UmgangVeränderung = c("-umgangVeränderung_1", "umgangVeränderung_2", "umgangVeränderung_3", "umgangVeränderung_4", "-umgangVeränderung_5", "umgangVeränderung_6", "-umgangVeränderung_7"),
   Akz_UmgangTechnik = c("akz_UmgangTechnik_1", "akz_UmgangTechnik_2","-akz_UmgangTechnik_3","-akz_UmgangTechnik_4","akz_UmgangTechnik_5","akz_UmgangTechnik_6","akz_UmgangTechnik_7","akz_UmgangTechnik_8","akz_UmgangTechnik_9","akz_UmgangTechnik_10"),
-  Akz_Zufriedenheit = c("akz_Zufriedenheit_1", "akz_Zufriedenheit_2","-akz_Zufriedenheit_3","-akz_Zufriedenheit_4","-akz_Zufriedenheit_5","akz_Zufriedenheit_6","-akz_Zufriedenheit_7"),
+  Akz_Zufriedenheit = c("-akz_Zufriedenheit_1", "akz_Zufriedenheit_2","-akz_Zufriedenheit_3","-akz_Zufriedenheit_4","-akz_Zufriedenheit_5","akz_Zufriedenheit_6"),
   Akz_Verhaltensabsich = c("akz_Verhaltensabsich_1", "akz_Verhaltensabsich_2","akz_Verhaltensabsich_3"),
   KI_Verständnis = c("kI_Verständnis_1", "kI_Verständnis_2", "kI_Verständnis_3", "-kI_Verständnis_4", "kI_Verständnis_5", "kI_Verständnis_6", "kI_Verständnis_7"),
   XAI_Transparenz = c("xai_Transparenz_1", "xai_Transparenz_2", "xai_Transparenz_3", "-xai_Transparenz_4", "-xai_Transparenz_5", "xai_Transparenz_6"),
@@ -165,5 +163,75 @@ data <- data %>%
 # RDS abspeichern: ----
 
 saveRDS(data, "data/clean_data.rds")
+
+#Qualitätsanalyse: ----
+
+raw.short %>%
+  select(starts_with("akz_Z", ignore.case = F)) -> akz_Zq
+akz_Zq <-mutate_all(akz_Zq, as.numeric)
+jmv::efa(akz_Zq)
+
+speedlimit <- median(raw$`Duration (in seconds)`) / 2
+raw %>%
+  filter(!`Duration (in seconds)` > speedlimit) -> raw.speeder
+
+raw.short <- raw.short[!raw.short$responseId %in% raw.speeder$ResponseId,]
+scores <- scoreItems(schluesselliste, items = raw.short, missing = TRUE, min = 1, max = 6)
+scores_without_Speeder <- scores$alpha
+
+# Vorbereitung: nur die items, alles als zahlen:
+raw.likerts <- raw.short[,c(6:12, 14:57)]
+raw.likerts <- mutate_all(raw.likerts, as.numeric)
+
+
+# Straightliner:
+long <- careless::longstring(raw.likerts, avg = T)
+summary(long)
+irv <- careless::irv(raw.likerts)
+summary(irv)
+
+# Ungewöhnliche Zusammenhangssysthematiken:
+
+recode_number <- function(x){
+  7 - x
+}
+
+raw.likerts %>%
+  mutate_at(vars("umgangVeränderung_1","umgangVeränderung_5","umgangVeränderung_7",
+                 "akz_UmgangTechnik_3","akz_UmgangTechnik_4",
+                 "akz_Zufriedenheit_1", "akz_Zufriedenheit_3","akz_Zufriedenheit_4","akz_Zufriedenheit_5",
+                 "kI_Verständnis_4",
+                 "xai_Transparenz_4", "xai_Transparenz_5",
+                 "kI_Erwartung_5", "kI_Erwartung_6",
+                 "kI_Erfahrung_2"), recode_number) -> raw.likerts.coded
+
+
+eo <- careless::evenodd(raw.likerts.coded, factors = c(7, 10, 7, 3, 7, 6, 6, 5))
+summary(eo)
+
+careless::psychsyn_critval(raw.likerts)
+psychsyn <- careless::psychsyn(raw.likerts, critval = 0.6)
+summary(psychsyn)
+
+careless::psychsyn_critval(raw.likerts, anto = T)
+psychant <- careless::psychsyn(raw.likerts, critval = -0.6, anto =T)
+summary(psychant)
+
+
+# Ausreißer
+mahad_flags <- careless::mahad(raw.likerts, flag = TRUE, confidence = 0.99, plot = F)
+summary(mahad_flags)
+
+#raw.likerts <- cbind(responseId = raw.short$responseId, raw.likerts, long, irv, eo, psychsyn, psychant, mahad_flags)
+#raw.likerts %>%
+ # filter(eo < 0 | psychant > 0| psychsyn < 0| flagged == TRUE) -> raw.gtfo
+
+#raw.quality <- raw.likerts[!raw.likerts$responseId %in% raw.gtfo$responseId,]
+
+#scores <- scoreItems(schluesselliste, items = raw.quality, missing = TRUE, min = 1, max = 6)
+#scores_quality <- scores$alpha
+
+#alphaComparison <- as.data.frame(rbind(scores_before, scores_without_Speeder, scores_quality))
+rowMeans(alphaComparison)
 
 
