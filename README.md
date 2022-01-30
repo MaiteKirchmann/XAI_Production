@@ -110,7 +110,7 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 
 -   Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
 
-
+![Offenheit](Visualisierung/LinReg_Offenheit_AKZ_KI.png)
 
 #### Hypothese 2
 
