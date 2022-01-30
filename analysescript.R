@@ -232,6 +232,6 @@ summary(mahad_flags)
 #scores_quality <- scores$alpha
 
 #alphaComparison <- as.data.frame(rbind(scores_before, scores_without_Speeder, scores_quality))
-rowMeans(alphaComparison)
+#rowMeans(alphaComparison)
 
 
