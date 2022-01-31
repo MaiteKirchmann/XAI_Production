@@ -1,4 +1,5 @@
 #### Pakete laden: ----
+
 library(tidyverse)
 library(psych)
 source("qualtricshelpers.R")
@@ -7,10 +8,22 @@ library(careless)
 # Rohdaten einlesen: ----
 
 #file.numeric <- ("data/data.csv")
-file.text <- ("data/data2.csv")
-raw.text <- read.csv("data/data2.csv")
+#raw.text <- read.csv("data/data2.csv")
 
-raw <- load_qualtrics_csv(file.text)
+
+file.text <- "data/data2.csv"
+raw <- load_qualtrics_csv("data/data2.csv")
+
+file.text2 <- "data/XAI+in+der+Produktion_31.+Januar+2022_13.01.csv"
+hilfsdatensatz <- load_qualtrics_csv("data/XAI+in+der+Produktion_31.+Januar+2022_13.01.csv")
+
+hilfsdatensatz$numberOfDevices <- rowSums(hilfsdatensatz[29:33], na.rm = TRUE)
+hilfsdatensatz <- data.frame(ResponseId = hilfsdatensatz$ResponseId, numberOfDevices = hilfsdatensatz$numberOfDevices)
+
+raw <- merge(x = raw,
+             y = hilfsdatensatz,
+             by = "ResponseId",
+             all.x = TRUE)
 
 
 # Testdaten und unvollständige Daten entfernen: ----
@@ -18,7 +31,9 @@ raw <- load_qualtrics_csv(file.text)
 
 raw %>% 
   filter(Progress == 100) -> raw
-
+speedlimit <- median(raw$`Duration (in seconds)`) / 2
+raw %>%
+  filter(`Duration (in seconds)` > speedlimit) -> raw
 
 
 
@@ -166,61 +181,61 @@ saveRDS(data, "data/clean_data.rds")
 
 #Qualitätsanalyse: ----
 
-raw.short %>%
-  select(starts_with("akz_Z", ignore.case = F)) -> akz_Zq
-akz_Zq <-mutate_all(akz_Zq, as.numeric)
-jmv::efa(akz_Zq)
+#raw.short %>%
+#  select(starts_with("akz_Z", ignore.case = F)) -> akz_Zq
+#akz_Zq <-mutate_all(akz_Zq, as.numeric)
+#jmv::efa(akz_Zq)
 
-speedlimit <- median(raw$`Duration (in seconds)`) / 2
-raw %>%
-  filter(!`Duration (in seconds)` > speedlimit) -> raw.speeder
+#speedlimit <- median(raw$`Duration (in seconds)`) / 2
+#raw %>%
+#  filter(!`Duration (in seconds)` > speedlimit) -> raw.speeder
 
-raw.short <- raw.short[!raw.short$responseId %in% raw.speeder$ResponseId,]
-scores <- scoreItems(schluesselliste, items = raw.short, missing = TRUE, min = 1, max = 6)
-scores_without_Speeder <- scores$alpha
+#raw.short <- raw.short[!raw.short$responseId %in% raw.speeder$ResponseId,]
+#scores <- scoreItems(schluesselliste, items = raw.short, missing = TRUE, min = 1, max = 6)
+#scores_without_Speeder <- scores$alpha
 
-# Vorbereitung: nur die items, alles als zahlen:
-raw.likerts <- raw.short[,c(6:12, 14:57)]
-raw.likerts <- mutate_all(raw.likerts, as.numeric)
+# Vorbereitung: nur die items, alles als Zahlen:
+#raw.likerts <- raw.short[,c(6:12, 14:57)]
+#raw.likerts <- mutate_all(raw.likerts, as.numeric)
 
 
 # Straightliner:
-long <- careless::longstring(raw.likerts, avg = T)
-summary(long)
-irv <- careless::irv(raw.likerts)
-summary(irv)
+#long <- careless::longstring(raw.likerts, avg = T)
+#summary(long)
+#irv <- careless::irv(raw.likerts)
+#summary(irv)
 
 # Ungewöhnliche Zusammenhangssysthematiken:
 
-recode_number <- function(x){
-  7 - x
-}
+#recode_number <- function(x){
+ # 7 - x
+#}
 
-raw.likerts %>%
-  mutate_at(vars("umgangVeränderung_1","umgangVeränderung_5","umgangVeränderung_7",
-                 "akz_UmgangTechnik_3","akz_UmgangTechnik_4",
-                 "akz_Zufriedenheit_1", "akz_Zufriedenheit_3","akz_Zufriedenheit_4","akz_Zufriedenheit_5",
-                 "kI_Verständnis_4",
-                 "xai_Transparenz_4", "xai_Transparenz_5",
-                 "kI_Erwartung_5", "kI_Erwartung_6",
-                 "kI_Erfahrung_2"), recode_number) -> raw.likerts.coded
+#raw.likerts %>%
+ # mutate_at(vars("umgangVeränderung_1","umgangVeränderung_5","umgangVeränderung_7",
+  #               "akz_UmgangTechnik_3","akz_UmgangTechnik_4",
+   #              "akz_Zufriedenheit_1", "akz_Zufriedenheit_3","akz_Zufriedenheit_4","akz_Zufriedenheit_5",
+    #             "kI_Verständnis_4",
+     #            "xai_Transparenz_4", "xai_Transparenz_5",
+      #           "kI_Erwartung_5", "kI_Erwartung_6",
+       #          "kI_Erfahrung_2"), recode_number) -> raw.likerts.coded
 
 
-eo <- careless::evenodd(raw.likerts.coded, factors = c(7, 10, 7, 3, 7, 6, 6, 5))
-summary(eo)
+#eo <- careless::evenodd(raw.likerts.coded, factors = c(7, 10, 7, 3, 7, 6, 6, 5))
+#summary(eo)
 
-careless::psychsyn_critval(raw.likerts)
-psychsyn <- careless::psychsyn(raw.likerts, critval = 0.6)
-summary(psychsyn)
+#careless::psychsyn_critval(raw.likerts)
+#psychsyn <- careless::psychsyn(raw.likerts, critval = 0.6)
+#summary(psychsyn)
 
-careless::psychsyn_critval(raw.likerts, anto = T)
-psychant <- careless::psychsyn(raw.likerts, critval = -0.6, anto =T)
-summary(psychant)
+#careless::psychsyn_critval(raw.likerts, anto = T)
+#psychant <- careless::psychsyn(raw.likerts, critval = -0.6, anto =T)
+#summary(psychant)
 
 
 # Ausreißer
-mahad_flags <- careless::mahad(raw.likerts, flag = TRUE, confidence = 0.99, plot = F)
-summary(mahad_flags)
+#mahad_flags <- careless::mahad(raw.likerts, flag = TRUE, confidence = 0.99, plot = F)
+#summary(mahad_flags)
 
 #raw.likerts <- cbind(responseId = raw.short$responseId, raw.likerts, long, irv, eo, psychsyn, psychant, mahad_flags)
 #raw.likerts %>%

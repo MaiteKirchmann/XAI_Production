@@ -145,9 +145,9 @@ H0: ProduktionsmitarbeiterInnen unterscheiden sich nicht von ArbeitnehmerInnen a
 
 “ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.”
 
-Mustersatz: Ergebnis: Es gibt keinen signifikanten Unterschied zwischen den beiden
+Ergebnis: Es gibt keinen signifikanten Unterschied zwischen den beiden
 getesteten Gruppen in Bezug auf die Akzeptanz von KI.
-(*t*() = − ,*p* = 0.52).
+(*p* = 0.6).
 
 
 
@@ -205,7 +205,9 @@ der Offenheit gegenüber Veränderungen und der Akzeptanz von KI (*τ* = 0.21,
 
 "Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
-Ergebnis: noch offen
+Ergebnis: Es gibt einen positiven signifikanten Zusammenhang zwischen
+der vermehrter Techniknutzung und der Akzeptanz von KI (*τ* = 0.3,
+*p* < 0.01). Das bedeutet, dass mit einer offenen Einstellung gegenüber Veränderungen die Akzeptanz von KI steigt.
 
 <br> <br>
 

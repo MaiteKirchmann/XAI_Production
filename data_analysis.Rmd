@@ -237,7 +237,7 @@ Ergebnis:
 
 ```{r include=FALSE}
 
-cor.test(Cleandata$Akz_Verhaltensabsich, Cleandata$KI_Erfahrung, method = "kendall")
+#cor.test(Cleandata$Akz_Verhaltensabsich, Cleandata$KI_Erfahrung, method = "kendall")
 
 
 ```
@@ -267,7 +267,7 @@ Ergebnis:
 ```{r include=FALSE}
 #Gibt es eine Möglichkeit die Angaben der Techniknutzung zu zählen?
 
-#cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_UmgangTechnik, method = "kendall")
+cor.test(Cleandata$...59, Cleandata$Akz_Verhaltensabsich, method = "kendall")
 
 
 
@@ -275,7 +275,8 @@ Ergebnis:
 
 ```{r include=FALSE}
 
-
+Cleandata %>% ggplot() + aes(x = ...59, y = Akz_Verhaltensabsich) + geom_point(alpha = 0.5) + geom_smooth(method = lm, color = "black") + cowplot::theme_half_open() + scale_y_continuous(limits= c(1,6), breaks = 1:6) + scale_x_continuous(limits= c(1,6), breaks = 1:6) +labs(x = "Anzahl technischer Geräte", y = "Akzeptanz von KI", title = "Vermehrte Techniknutzung und Akzeptanz von KI 
+korrelieren positiv.")
 
 ```
 Ergebnis:
@@ -293,11 +294,12 @@ Ergebnis:
 Modell <- lm(Akz_Verhaltensabsich ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
 summary(Modell)
 
+
 ```
 
 ```{r include=FALSE}
 
-avPlots (Modell)
+#avPlots (Modell)
 
 ```
 
@@ -316,11 +318,12 @@ a <- lm(Akz_Verhaltensabsich ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung 
 
 summary(a)
 
+
 ```
 
 ```{r include=FALSE}
 
-avPlots (a) 
+#avPlots (a) 
 
 ```
 
