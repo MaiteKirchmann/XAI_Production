@@ -44,10 +44,6 @@ Welche Faktoren beeinflussen die Nutzerakzeptanz von XAI im Produktionsumfeld?
 
 ### 3. Faktorenraum 
 
----
-
-#png einfügen 
----
 
 <br>
 
@@ -145,6 +141,7 @@ Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-In
 t.test(filter(Cleandata,alter_Binary == "low")$Akz_Verhaltensabsich, filter(Cleandata, alter_Binary == "high")$Akz_Verhaltensabsich)
 
 ```
+
 ```{r include=FALSE}
 
 Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-Inf ,median(Cleandata$alter), Inf), labels=c("low", "high")))
@@ -152,6 +149,7 @@ Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-In
 t.test(filter(Cleandata,alter_Binary == "low")$Akz_UmgangTechnik, filter(Cleandata, alter_Binary == "high")$Akz_UmgangTechnik)
 
 ```
+
 ```{r include=FALSE}
 
 Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-Inf ,median(Cleandata$alter), Inf), labels=c("low", "high")))
@@ -172,10 +170,6 @@ t.test(filter(Cleandata, geschlecht == "Männlich")$Akz_UmgangTechnik, filter(Cl
 
 
 ```
-Ergebnis:
-Es gibt keinen signifikanten Unterschied zwischen Mönnern (m=4,7, SD= ) und Frauen (m=4,4, SD= ) in Bezug auf die Akzeptanz im Umgang mit Technik. ($t(1.71)= 55.61$  ,$_p_ = 0.092$).
-
-
 
 ---
 
@@ -208,6 +202,7 @@ cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_Zufriedenheit, method = "kenda
 
 
 ```
+
 ```{r include=FALSE}
 
 cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_UmgangTechnik, method = "kendall")
@@ -286,13 +281,13 @@ Modell2 <- lm(Akz_UmgangTechnik ~ UmgangVeränderung + KI_Verständnis + KI_Erfa
 summary(Modell2)
 
 ```
+
 ```{r include=FALSE}
 
 Modell3 <- lm(Akz_Zufriedenheit ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
 summary(Modell3)
 
 ```
-Ergebnis:
 
 <br>
 <br>
@@ -312,19 +307,13 @@ summary(a)
 
 ```{r include=FALSE}
 
-#avPlots (a) 
-
-```
-
-
-```{r include=FALSE}
-
 b <- lm(Akz_Zufriedenheit ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung + KI_Erwartung, data = Cleandata)
 
 summary(b)
 
 
 ```
+
 ```{r include=FALSE}
 
 c <- lm(Akz_UmgangTechnik ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung + KI_Erwartung, data = Cleandata)
@@ -333,18 +322,9 @@ summary(c)
 
 
 ```
-Ergebnis:
 
 <br>
 
 
 ---
-
-
-### 8. Qualitätskontrolle
-
-      UmgangVeränderung Akz_UmgangTechnik Akz_Zufriedenheit Akz_Verhaltensabsich KI_Verständnis
-alpha         0.6528693         0.8218434         0.5220756             0.757387      0.8016342
-      XAI_Transparenz KI_Erwartung KI_Erfahrung
-alpha       0.7583905    0.7484369     0.754876
 
