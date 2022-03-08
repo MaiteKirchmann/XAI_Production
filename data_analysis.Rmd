@@ -39,7 +39,7 @@ Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
 
 ### 2. Forschungsfrage 
 
-Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
+Welche Faktoren beeinflussen die Nutzerakzeptanz von XAI im Produktionsumfeld?
 
 
 ### 3. Faktorenraum 
@@ -53,24 +53,23 @@ Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
 ### 4. Szenariotext
 
-Musterbeispiel: Nüsse sortieren mithilfe von KI​
+Musterbeispiel: Nüsse sortieren mithilfe von KI
+ 
 
-​
+Wie bereits erwähnt, handelt diese Studie von XAI (explainable artificial intelligence = erklärbare künstliche Intelligenz) in der Produktion.
 
-Wie bereits erwähnt, handelt diese Studie von XAI (explainable artificial intelligence = erklärbare künstliche Intelligenz) in der Produktion.​
 
-​
-Im Folgenden wollen wir Ihnen kurz erklären, was man darunter versteht. ​
+Im Folgenden wollen wir Ihnen kurz erklären, was man darunter versteht. 
 
-Eine künstliche Intelligenz (KI) kann zum Beispiel in einer Maschine implementiert sein. Wird diese in der Produktion eingesetzt, so hat sie meist eine zugeordnete Aufgabe. In der Lebensmittelproduktion wird eine künstliche Intelligenz beispielsweise zum Vorsortieren von Nüssen eingesetzt. Dort hat sie die Aufgabe die Nüsse nach einer Norm zu sortieren. Diese Maschine wird im folgenden Nusssortierer genannt.    ​
+Eine künstliche Intelligenz (KI) kann zum Beispiel in einer Maschine implementiert sein. Wird diese in der Produktion eingesetzt, so hat sie meist eine zugeordnete Aufgabe. In der Lebensmittelproduktion wird eine künstliche Intelligenz beispielsweise zum Vorsortieren von Nüssen eingesetzt. Dort hat sie die Aufgabe die Nüsse nach einer Norm zu sortieren. Diese Maschine wird im folgenden Nusssortierer genannt.    
 
-Eine KI wird zu einer XAI wenn die Produktionsmitarbeitenden verstehen, anhand welcher Merkmale die KI die Nüsse aussortiert. ​
+Eine KI wird zu einer XAI wenn die Produktionsmitarbeitenden verstehen, anhand welcher Merkmale die KI die Nüsse aussortiert. 
 
-Ein Merkmal kann bei diesem Beispiel die Größe, die Oberflächenbeschaffenheit oder die Form der Nuss sein. Können die Mitarbeitenden diese Auswahlkriterien nachvollziehen, kann man von einer XAI sprechen. ​
+Ein Merkmal kann bei diesem Beispiel die Größe, die Oberflächenbeschaffenheit oder die Form der Nuss sein. Können die Mitarbeitenden diese Auswahlkriterien nachvollziehen, kann man von einer XAI sprechen. 
 
-​
-Der Grad der Erklärbarkeit ist jedoch von Mensch zu Mensch verschieden. Deshalb unterscheidet sich auch die Akzeptanz der KI in der Produktion individuell.​
-​
+
+Der Grad der Erklärbarkeit ist jedoch von Mensch zu Mensch verschieden. Deshalb unterscheidet sich auch die Akzeptanz der KI in der Produktion individuell.
+
 Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen, wie die Nutzerakzeptanz einer KI beeinflusst wird.
 
 
@@ -82,29 +81,17 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 
 #### Hypothese 1
 
-* ProduktionsmitarbeiterInnen unterscheiden sich von ArbeitnehmerInnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
-* H0: 
-* H1: 
-
-
-
+* Produktionsmitarbeiter:innen unterscheiden sich von Arbeitnehmer:nnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
+* H0: Produktionsmitarbeiter:innen unterscheiden sich nicht von Arbeitnehmer:nnen anderer Fachbereiche in Bezug auf die Akzeptanz von KI.
 
 #### Hypothese 2
 
 * ProduktionsmitarbeiterInnen jüngerer Generation unterscheiden sich von ProduktionsmitarbeiterInnen älterer Generation in Bezug auf die Akzeptanz von KI.
-* H0: 
-* H1: 
-
-
-
+* H0: Personen jüngerer Generation unterscheiden nicht sich von Personen älterer Generation in Bezug auf die Akzeptanz von KI.
 
 #### Hypothese 3
 * Es gibt einen Unterschied zwischen Männern und Frauen in Bezug auf die Akzeptanz im Umgang mit Technik.
-* UV: 
-* AV: 
-* H0: 
-* H1: 
-
+* H0: Es gibt keinen Unterschied zwischen Männern und Frauen in Bezug auf die Akzeptanz im Umgang mit Technik.
 
 ---
 
@@ -113,40 +100,21 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 ### 6. Zusammenhangshypothesen
 
 
-#### Hypothese 1
+#### Hypothese 4
 * Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz von KI.
-* H1: 
-* H0: 
 
-
-
-
-#### Hypothese 2
+#### Hypothese 5
 * Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten.
-* H1: 
-* H0: 
 
-
-
-
-#### Hypothese 3
+#### Hypothese 6
 * Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten.
-* H1: 
-* H0: 
-
-
 
 #### komplexe Zusammenhangshypothese
-#### Hypothese 1
+#### Hypothese 7
 * Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
-* H1: 
-* H0: 
 
-
-#### Hypothese 2
+#### Hypothese 8
 * Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI.
-* H1:
-* H0:
 
 ---
 
@@ -160,17 +128,9 @@ Die Erhebung wird durchgeführt, um der Beantwortung der Frage näher zu kommen,
 
 ```{r include=FALSE}
 
-
-#mancova(filter(Cleandata, arbeitsumfeld == "Ja"), deps = c("Akz_UmgangTechnik", "Akz_Zufriedenheit", "Akz_Verhaltensabsich"))
-
 mancova(Cleandata, deps = c("Akz_UmgangTechnik", "Akz_Zufriedenheit", "Akz_Verhaltensabsich"), factors = c("arbeitsumfeld"))
 
-#t.test(filter(Cleandata, arbeitsumfeld == "Ja")$Akz_UmgangTechnik, filter(Cleandata, arbeitsumfeld == "Nein")$Akz_UmgangTechnik)
-
-
 ```
-Ergebnis:
-Es gibt keinen signifikatnten 
 
 <br>
 <br>
@@ -183,6 +143,20 @@ Es gibt keinen signifikatnten
 Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-Inf ,median(Cleandata$alter), Inf), labels=c("low", "high")))
 
 t.test(filter(Cleandata,alter_Binary == "low")$Akz_Verhaltensabsich, filter(Cleandata, alter_Binary == "high")$Akz_Verhaltensabsich)
+
+```
+```{r include=FALSE}
+
+Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-Inf ,median(Cleandata$alter), Inf), labels=c("low", "high")))
+
+t.test(filter(Cleandata,alter_Binary == "low")$Akz_UmgangTechnik, filter(Cleandata, alter_Binary == "high")$Akz_UmgangTechnik)
+
+```
+```{r include=FALSE}
+
+Cleandata <- transform(Cleandata, alter_Binary=cut(Cleandata$alter, breaks=c(-Inf ,median(Cleandata$alter), Inf), labels=c("low", "high")))
+
+t.test(filter(Cleandata,alter_Binary == "low")$Akz_Zufriedenheit, filter(Cleandata, alter_Binary == "high")$Akz_Zufriedenheit)
 
 ```
 
@@ -210,7 +184,7 @@ Es gibt keinen signifikanten Unterschied zwischen Mönnern (m=4,7, SD= ) und Fra
 #### Zusammenhangshypothesen
 
 
-#### Hypothese 1
+#### Hypothese 4
 
 "Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz von KI."
 
@@ -227,11 +201,23 @@ cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_Verhaltensabsich, method = "ke
 Cleandata %>% ggplot() + aes(x = XAI_Transparenz, y = Akz_Verhaltensabsich) + geom_point(alpha = 0.5) + geom_smooth(method = lm, color = "black") + cowplot::theme_half_open() + scale_y_continuous(limits= c(1,6), breaks = 1:6) + scale_x_continuous(limits= c(1,6), breaks = 1:6) +labs(x = "Transparenzempfindung", y = "Akzeptanz von KI", title = "Transparenzempfindung & Akzeptanz von KI korrelieren positiv.")
 
 ```
-Ergebnis: 
+
+```{r include=FALSE}
+
+cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_Zufriedenheit, method = "kendall")
+
+
+```
+```{r include=FALSE}
+
+cor.test(Cleandata$XAI_Transparenz, Cleandata$Akz_UmgangTechnik, method = "kendall")
+
+
+```
 
 <br>
 <br>
-#### Hypothese 2
+#### Hypothese 5
 
 "Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
@@ -259,24 +245,21 @@ Akzeptanz von KI korrelieren positiv.")
 Ergebnis: 
 <br>
 <br>
-#### Hypothese 3
+#### Hypothese 6
 
 
 "Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
 ```{r include=FALSE}
-#Gibt es eine Möglichkeit die Angaben der Techniknutzung zu zählen?
 
 cor.test(Cleandata$...59, Cleandata$Akz_Verhaltensabsich, method = "kendall")
-
-
 
 ```
 
 ```{r include=FALSE}
 
-Cleandata %>% ggplot() + aes(x = ...59, y = Akz_Verhaltensabsich) + geom_point(alpha = 0.5) + geom_smooth(method = lm, color = "black") + cowplot::theme_half_open() + scale_y_continuous(limits= c(1,6), breaks = 1:6) + scale_x_continuous(limits= c(1,6), breaks = 1:6) +labs(x = "Anzahl technischer Geräte", y = "Akzeptanz von KI", title = "Vermehrte Techniknutzung und Akzeptanz von KI 
-korrelieren positiv.")
+Cleandata %>% ggplot() + aes(x = ...59, y = Akz_Verhaltensabsich) + geom_point(alpha = 0.5) + geom_smooth(method = lm, color = "black") + cowplot::theme_half_open() + scale_y_continuous(limits= c(1,6), breaks = 1:6) + scale_x_continuous(limits= c(1,6), breaks = 1:6) +labs(x = "Anzahl technischer Geräte", y = "Bereitschaft mit KI zusammenzuarbeiten", title = "Vermehrte Techniknutzung und die Bereitschaft mit KI 
+zusammenzuarbeiten korrelieren positiv.")
 
 ```
 Ergebnis:
@@ -285,29 +268,35 @@ Ergebnis:
 <br>
 #### komplexe Zusammenhangshypothese
 
-#### Hypothese 1
+#### Hypothese 7
 
 "Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI."
 
 ```{r include=FALSE}
 
-Modell <- lm(Akz_Verhaltensabsich ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
-summary(Modell)
+Modell1 <- lm(Akz_Verhaltensabsich ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
+summary(Modell1)
 
 
 ```
 
 ```{r include=FALSE}
 
-#avPlots (Modell)
+Modell2 <- lm(Akz_UmgangTechnik ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
+summary(Modell2)
 
 ```
+```{r include=FALSE}
 
+Modell3 <- lm(Akz_Zufriedenheit ~ UmgangVeränderung + KI_Verständnis + KI_Erfahrung, data = Cleandata)
+summary(Modell3)
+
+```
 Ergebnis:
 
 <br>
 <br>
-#### Hypothese 2
+#### Hypothese 8
 
 "Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI."
 
@@ -327,6 +316,23 @@ summary(a)
 
 ```
 
+
+```{r include=FALSE}
+
+b <- lm(Akz_Zufriedenheit ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung + KI_Erwartung, data = Cleandata)
+
+summary(b)
+
+
+```
+```{r include=FALSE}
+
+c <- lm(Akz_UmgangTechnik ~ KI_Verständnis + XAI_Transparenz + KI_Erfahrung + KI_Erwartung, data = Cleandata)
+
+summary(c)
+
+
+```
 Ergebnis:
 
 <br>

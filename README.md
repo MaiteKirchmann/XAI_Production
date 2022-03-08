@@ -23,11 +23,9 @@ Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
 ### 3. Faktorenraum
 
-
-
 ------------------------------------------------------------------------
 
-
+![Faktorenraum.](C:/Users/Maite Kirchmann/Desktop/XAI/XAI_Production/Fakorenraum.png)
 -----------------------------------------
 
 <br>
@@ -88,22 +86,20 @@ H0: ProduktionsmitarbeiterInnen unterscheiden sich nicht von ArbeitnehmerInnen a
 -   H1: Frauen unterscheiden sich von Männern in Bezug auf die Akzeptanz von KI.
 
 
-
-
 ------------------------------------------------------------------------
 
 <br>
 
 ### 6. Zusammenhangshypothesen
 
-#### Hypothese 1
+#### Hypothese 4
 
 -   Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz.
 -   H1: Transparenzempfindung und Akzeptanz von KI korrelieren positiv.
 -   H0: Transparenzempfindung und Akzeptanz von KI korrelieren nicht.
 
 
-#### Hypothese 2
+#### Hypothese 5
 
 -   Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten. 
 -   H1: Offenheit gegenüber Veränderungen und Bereitschaft mit KI zusammenarbeiten korrelieren positiv.
@@ -111,7 +107,7 @@ H0: ProduktionsmitarbeiterInnen unterscheiden sich nicht von ArbeitnehmerInnen a
 
 
 
-#### Hypothese 3
+#### Hypothese 6
 
 -   Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten.
 -   H1: x und y korrelieren positiv.
@@ -119,14 +115,14 @@ H0: ProduktionsmitarbeiterInnen unterscheiden sich nicht von ArbeitnehmerInnen a
 
 #### komplexe Zusammenhangshypothese
 
-#### Hypothese 1
+#### Hypothese 7
 
 -   Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI.
 -   H1: Akzeptanz und y korrelieren positiv.
 -   H0: Akzeptanz und y korrelieren nicht
 
 
-#### Hypothese 2
+#### Hypothese 8
 
 -   Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI. -   H1: Akzeptanz korreliert positiv mit dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI .
 -   H0: Akzeptanz korreliert nicht mit dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI.
@@ -177,7 +173,7 @@ Ergebnis: Es gibt keinen signifikanten Unterschied zwischen Männern (m=4,7, SD=
 
 #### Zusammenhangshypothesen
 
-#### Hypothese 1:
+#### Hypothese 4:
 
 "Je höher die Transparenzempfindung ist, desto höher ist auch die Akzeptanz von KI."
 
@@ -188,7 +184,7 @@ der Transparenzempfindung und der Akzeptanz von KI (*τ* = 0.41,
 
 <br> <br>
 
-#### Hypothese 2:
+#### Hypothese 5:
 
 "Je höher die Offenheit gegenüber Veränderungen, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
@@ -201,7 +197,7 @@ der Offenheit gegenüber Veränderungen und der Akzeptanz von KI (*τ* = 0.21,
 
 <br> <br>
 
-#### Hypothese 3:
+#### Hypothese 6:
 
 "Je mehr Technik genutzt wird, desto höher ist die Bereitschaft mit KI zusammenarbeiten."
 
@@ -213,7 +209,7 @@ der vermehrter Techniknutzung und der Akzeptanz von KI (*τ* = 0.3,
 
 #### Komplexe Zusammenhangshypothese
 
-#### Hypothese 1:
+#### Hypothese 7:
 
 "Die Akzeptanz ist abhängig von Offenheit gegenüber Veränderungen, dem Verständnis für Funktionalität und der Erfahrung mit KI."
 
@@ -223,7 +219,7 @@ der Akzeptanz von KI gegenüber der Offenheit gegenüber Veränderungen, dem Ver
 
 <br> <br>
 
-#### Hypothese 2:
+#### Hypothese 8:
 
 "Die Akzeptanz ist abhängig von dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI."
 
