@@ -11,7 +11,6 @@
 5.  [Unterschiedshypothesen](#5-unterschiedshypothesen)
 6.  [Zusammenhangshypothesen](#6-zusammenhangshypothesen)
 7.  [Hypothesenauswertung](#7-hypothesenauswertung)
-8.  [Qualitätskontrolle](#8-qualitätskontrolle)
 
 ### 1. Teammitglieder
 
@@ -25,7 +24,7 @@ Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
 ------------------------------------------------------------------------
 
-![Faktorenraum.](C:/Users/Maite Kirchmann/Desktop/XAI/XAI_Production/Fakorenraum.png)
+![Faktorenraum.](C:\Users\Maite Kirchmann\Desktop\XAI\XAI_Production\Faktorenraum.png)
 -----------------------------------------
 
 <br>
@@ -227,9 +226,6 @@ Ergebnis: Es gibt einen positiven signifikanten Zusammenhang zwischen
 der Akzeptanz von KI gegenüber dem Verständnis für Funktionalität, der Transparenzempfindung, der Erfahrung und der Erwartung von KI.(?? *p* < 0.001).
 
 <br>
-
-------------------------------------------------------------------------
-
-### 8. Qualitätskontrolle
+--------------
 
 
