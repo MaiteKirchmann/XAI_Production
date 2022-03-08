@@ -22,11 +22,9 @@ Welche Faktoren beeinflusen die Nutzerakzeptanz von XAI im Produktionsumfeld?
 
 ### 3. Faktorenraum
 
-------------------------------------------------------------------------
 
 ![Faktorenraum.](Faktorenraum.png)
 
------------------------------------------
 
 <br>
 
