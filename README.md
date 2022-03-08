@@ -18,13 +18,14 @@ Du Trang Nguyen, Maite Kirchmann, Katharina Jannes, Laura Schmitz
 
 ### 2. Forschungsfrage
 
-Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
+Welche Faktoren beeinflusen die Nutzerakzeptanz von XAI im Produktionsumfeld?
 
 ### 3. Faktorenraum
 
 ------------------------------------------------------------------------
 
-![Faktorenraum.](C:/Users/Maite Kirchmann/Desktop/XAI/XAI_Production/Faktorenraum.png)
+![Faktorenraum.](Faktorenraum.png)
+
 -----------------------------------------
 
 <br>
