@@ -24,7 +24,7 @@ Inwiefern wird die Nutzerakzeptanz von XAI im Produktionsumfeld beeinflusst?
 
 ------------------------------------------------------------------------
 
-![Faktorenraum.](C:\Users\Maite Kirchmann\Desktop\XAI\XAI_Production\Faktorenraum.png)
+![Faktorenraum.](C:/Users/Maite Kirchmann/Desktop/XAI/XAI_Production/Faktorenraum.png)
 -----------------------------------------
 
 <br>
